@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-4 mt-3" *ngFor="let skin of skins; let i = index">
+    <div class="card text-center">
+      <div class="card-header">
+        <h3>{{ skin.name }}</h3>
+      </div>
+      <div
+        class="card-body"
+        [style.background-image]="'url(' + (link1 + skin.id + link2) + ')'"
+      >
+        <div *ngFor="let quality of categorys">
+          <h4 class="card-title" *ngIf="quality.id == skin.category">
+            << {{ quality.exterior }} >>
+          </h4>
+        </div>
+
+        <br />
+        <p class="card-text">price: {{ skin.price }}$</p>
+        <p class="card-text">
+          date: {{ skin.date | date: "dd/MM/YYYY" }}
+          <br />
+        </p>
+        <div class="icons" *ngIf="authService.isAdmin">
+          <fa-icon
+            class="delete"
+            (click)="deleteSkin(skin.id)"
+            [ngStyle]="{ color: 'red' }"
+            [icon]="faTimes"
+          ></fa-icon>
+          <fa-icon
+            class="update"
+            [routerLink]="['/updateskin', skin.id]"
+            [ngStyle]="{ color: 'blue' }"
+            [icon]="faEdit"
+          ></fa-icon>
+        </div>
+      </div>      
+        <div class="card-footer text-muted">{{i}}</div>
+    </div>
+  </div>
+</div>

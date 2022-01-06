@@ -1,0 +1,89 @@
+{
+  "skin": [
+    {
+      "name": "a7-47",
+      "price": 354,
+      "date": "2021-12-20",
+      "category": 2,
+      "id": 2
+    },
+    {
+      "name": "AWP | Dragon Lore",
+      "price": 24574,
+      "date": "2021-12-21",
+      "category": 2,
+      "id": 3
+    },
+    {
+      "name": "knife carambite",
+      "price": 12454,
+      "date": "2021-12-21",
+      "category": 2,
+      "id": 4
+    },
+    {
+      "name": "AWP | Dragon Lore aa",
+      "price": 3,
+      "date": "2021-12-21",
+      "category": 2,
+      "id": 5
+    },
+    {
+      "name": "AWP | Dragon Lore",
+      "price": 300,
+      "date": "2022-01-18",
+      "category": 5,
+      "id": 6
+    },
+    {
+      "name": "a7-47",
+      "price": 900,
+      "date": "2022-01-26",
+      "category": 2,
+      "id": 7
+    },
+    {
+      "name": "a7minde9",
+      "price": 7,
+      "date": "2022-02-01",
+      "category": 1,
+      "id": 8
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "exterior": "Factory New"
+    },
+    {
+      "id": 2,
+      "exterior": "Minimal Wear"
+    },
+    {
+      "id": 3,
+      "exterior": "Field-Tested"
+    },
+    {
+      "id": 4,
+      "exterior": "Well-Worn"
+    },
+    {
+      "id": 5,
+      "exterior": "Battle-Scarred"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "role": "ADMIN"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "user",
+      "role": "USER"
+    }
+  ]
+}

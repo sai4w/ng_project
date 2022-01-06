@@ -1,0 +1,51 @@
+.bg {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-image: url("../../assets/img/bg.webp");
+  padding-top: 2rem;
+}
+.infos {
+  display: flex;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  border: 2px solid red;
+  border-radius: 12px;
+  align-content: center;
+  justify-content: center;
+}
+.info1,
+.info2 {
+  display: inline;
+  justify-content: space-between;
+  min-height: 200px;
+  width: 200px;
+  background-image: linear-gradient(
+    to right top,
+    #143a72,
+    #232d57,
+    #23233e,
+    #1d1927,
+    #111012
+  );
+  margin: auto;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+  color: whitesmoke;
+  font-size: 20px;
+  height: fit-content;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+span {
+  color: red;
+  text-align: center;
+  margin: auto;
+  font-weight: 200;
+  font-size: 25px;
+}

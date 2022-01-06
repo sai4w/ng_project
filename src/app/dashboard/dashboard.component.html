@@ -1,0 +1,11 @@
+<div class="bg">
+  <div class="container">
+    <ul class="infos">
+      <li class="info1"><p>In this inventory you have </p> <span>{{count}} </span> <p> skins of different exterior</p> </li>
+      <li class="info2"><p *ngFor="let item of categorys">{{item.id +". "+ item.exterior}}</p> </li>
+    </ul>
+    <button type="button" class="btn btn-primary">
+      <a [routerLink]="['/inventory']"> Inventory </a>
+    </button>
+  </div>
+</div>

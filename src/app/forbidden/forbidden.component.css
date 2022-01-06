@@ -1,0 +1,38 @@
+.container {
+    min-height: 90vh ;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    transform: translateY(10vh);
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    transform: translateY(10vh);
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+}
+
+.content-text {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.4);
+}
+
+.content-error-logo {
+    display: flex;
+    justify-content: center;
+    transform: translateY(10vh);
+    font-size: 150px;
+}

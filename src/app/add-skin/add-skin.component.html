@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="d-flex justify-content-between col-sm-12 col-md-12 col-lg-12 mt-5">
+    <div class="col-sm-6 col-6 col-md-6 col-lg-4 me-2">
+      <form class="ms-5 card p-2">
+        <div class="mb-3">
+          <h3>Add new skin :</h3>
+        </div>
+        <div class="mb-3" hidden>
+          <label for="exampleInputId" class="form-label">Skin ID</label>
+          <input
+            type="text"
+            [(ngModel)]="newSkin.id"
+            name="id"
+            class="form-control"
+            id="exampleInputId"
+            aria-describedby="emailHelp"
+          />
+        </div>
+  
+        <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Skin Name</label>
+          <input
+            type="text"
+            [(ngModel)]="newSkin.name"
+            name="skinName"
+            class="form-control"
+            id="exampleInputName"
+            aria-describedby="emailHelp"
+          />
+        </div>
+  
+        <div class="mb-3">
+          <label for="exampleInputQuality" class="form-label">Quality</label>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            [(ngModel)]="categoryId"
+            name="category"
+            id="exampleInputQuality"
+          >
+            
+            <option [ngValue]="item.id" *ngFor="let item of categorys" name="category" >
+              {{ item.exterior }}
+            </option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputSkinPrice" class="form-label"
+            >Skin price</label
+          >
+          <input
+            type="number"
+            [(ngModel)]="newSkin.price"
+            name="price"
+            class="form-control"
+            id="exampleInputPrice"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputDate" class="form-label">Date</label>
+          <input
+            type="date"
+            [(ngModel)]="newSkin.date"
+            name="date"
+            class="form-control"
+            id="exampleInputDate"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <button type="submit" (click)="addSkin()" class="btn btn-success">Add skin</button>
+      </form>
+    </div>
+  </div>
+  
+</div>

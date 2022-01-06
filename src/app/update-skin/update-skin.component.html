@@ -1,0 +1,63 @@
+<div class="d-flex justify-content-between col-sm-12 col-md-12 col-lg-12 mt-5">
+  <div class="col-sm-4 col-md-4 col-lg-4">
+    <div class="mb-3">
+      <h3 class="ms-5" style="font-family: sans-serif; font-weight: bolder">
+        Update skin :
+      </h3>
+    </div>
+    <form class="ms-5 col-sm-12 col-md-12 col-lg-12">
+      <div class="mb-3">
+        <label for="exampleInputId" class="form-label">Skin Name</label>
+        <input
+          type="text"
+          [(ngModel)]="currentSkin.name"
+          name="name"
+          class="form-control"
+          id="exampleInputName"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputSkinQuality" class="form-label">Quality</label>
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          [(ngModel)]="currentSkin.id"
+          name="skinQuality"
+          id="exampleInputSkinCategory"
+        >
+          <option *ngFor="let category of categorys"  [ngValue]="category.id" [selected]="category.id == currentSkin.category">
+            {{ category.exterior }}
+          </option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputSkinPrice" class="form-label">Skin Price</label>
+        <input
+          type="number"
+          [(ngModel)]="currentSkin.price"
+          name="price"
+          class="form-control"
+          id="exampleInputPrice"
+        />
+      </div>
+      
+
+      <div class="mb-3">
+        <label for="exampleInputSkinDate" class="form-label">Skin date</label>
+        <input
+          type="date"
+          [ngModel]="currentSkin.date | date: 'yyyy-MM-dd'"
+          (ngModelChange)="currentSkin.date = $event"
+          name="date"
+          class="form-control"
+          id="exampleInputDate"
+        />
+      </div>
+
+      <button type="submit" (click)="updateSkin(currentSkin)" class="btn btn-success">
+        Edit skin
+      </button>
+    </form>
+  </div>
+  <div class="col-md-6"></div>
+</div>
